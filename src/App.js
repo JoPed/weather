@@ -5,11 +5,12 @@ function App() {
   return (
     <div id="mainContainer">
 
-      <header id="header" className="header">
+      <header id="header" >
         Vejret
       </header>
 
       <section>
+
         <figure id="myComponent" style={{ backgroundColor: "#ccc" }}>
           <img src="/assets/images/weather-component.png" />
         </figure>
@@ -48,7 +49,7 @@ function App() {
         </article>
 
       </section>
-      
+
     </div>
   );
 }
