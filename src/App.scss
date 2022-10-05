@@ -5,7 +5,7 @@ body{
 
 }
 
-.mainContainer {
+#mainContainer {
   position: absolute;
   grid-auto-flow: row;
    width: 90%;
@@ -37,6 +37,14 @@ img {
   object-fit: cover;
 }
 
+}
+
+figure {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 
@@ -88,23 +96,16 @@ position: relative;
   }
 }
 
-.footer {
-  background-color: #4EB1D9;
-  margin-top: 20px;
-  font-family: 'Courier New', Courier, monospace;
-  text-align:center;
-  font-size: calc(1em + 1vw);
-  font-weight: bold;
-  color:#fff;
-letter-spacing: 1.8rem;
-text-transform: uppercase;
-padding-left: calc(0.5em + 0.5vw);
+#article-image-right-text{
+  font-size:calc(.8em + .8vw);
+  font-weight:bold;
+  padding-bottom: 2px;
 }
 
 
 @media screen and (max-width: $breakpoint) {
 
-  .mainContainer {
+  #mainContainer {
     position: absolute;
     grid-auto-flow: row;
    width:95%;

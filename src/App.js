@@ -3,48 +3,53 @@ import "./App.scss";
 function App() {
 
   return (
+    <div id="mainContainer">
 
-    <div className="mainContainer" id="mainContainer">
-      <div id="header" className="header">
-        <div>Vejret</div>
-      </div>
+      <header id="header" className="header">
+        Vejret
+      </header>
 
-      <div id="myComponent" style={{ backgroundColor: "#ccc" }}>
-        <img src="/assets/images/weather-component.png" />
-      </div>
+      <section>
+        <figure id="myComponent" style={{ backgroundColor: "#ccc" }}>
+          <img src="/assets/images/weather-component.png" />
+        </figure>
 
-      <div id="gridContainer" className="grid"></div>
+        <section id="subgrid" className="grid">
+          <article id="mImg">
+            <figure>
+              <img src="/assets/images/image1.jpeg" />
+              <figcaption>
+                Blå himmel, sol og forår: Men vinden snyder dig i de her dage
+              </figcaption>
+            </figure>
+          </article>
 
-      <div id="subgrid" className="grid">
-        <div id="mImg">
+          <article div id="mImg">
+            <figure>
+              <img src="/assets/images/image2.jpeg" />
+              <figcaption>
+                Ok ... Så er vi med igen ... det svigter aldrig, ok sydover lige
+                nu
+              </figcaption>
+            </figure>
+          </article>
+        </section>
+
+        <article id="bottomArticle">
+          <figure>
+            <img src="/assets/images/summer.jpeg" />
+          </figure>
           <div>
-            <img src="/assets/images/image1.jpeg" />
+            <header id="article-image-right-text">
+              Det bliver varmere snart
+            </header>
+            <span>Op til 19 grader og høj sol lige om hjørnet...</span>
           </div>
-          <div className="imageText">
-            Blå himmel, sol og forår: Men vinden snyder dig i de her dage
-          </div>
-        </div>
-        <div id="mImg">
-          <div>
-            <img src="/assets/images/image2.jpeg" />
-          </div>
-          <div>
-            Ok ... Så er vi med igen ... det svigter aldrig, ok sydover lige nu
-          </div>
-        </div>
-      </div>
+        </article>
 
-      <div id="bottomArticle">
-        <div>
-          <img src="/assets/images/summer.jpeg" />
-        </div>
-        <div>
-          <h1>Det bliver varmere snart</h1>
-          <span>Op til 19,34 grader og høj sol om hjørnet...yeahhhhii</span>
-        </div>
-      </div>
+      </section>
+      
     </div>
-    
   );
 }
 
