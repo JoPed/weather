@@ -1,6 +1,11 @@
 import "./App.scss";
+import Forecast from "./components/content/Forecast";
+import UseFetch from "./components/content/UseFetch";
 
-function App() {
+const App = ()=> {
+
+  const [data] = UseFetch("http://api.openweathermap.org/data/2.5/forecast?lat=56.4118&lon=10.8949&appid=34432d43abb73163c0b689bca70f0469&units=metric");
+  // const [data] = UseFetch("assets/settings.json");
 
   return (
     <div id="mainContainer">
@@ -11,9 +16,11 @@ function App() {
 
       <section>
 
-        <figure id="myComponent" style={{ backgroundColor: "#ccc" }}>
-          <img src="/assets/images/weather-component.png" />
-        </figure>
+        {
+          data && 
+          <Forecast items={data.list} />
+        }
+
 
         <section id="subgrid" className="grid">
           <article id="mImg">
@@ -25,7 +32,7 @@ function App() {
             </figure>
           </article>
 
-          <article div id="mImg">
+          <article id="mImg">
             <figure>
               <img src="/assets/images/image2.jpeg" />
               <figcaption>

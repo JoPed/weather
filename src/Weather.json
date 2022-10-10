@@ -1,0 +1,40 @@
+{
+    "weatherData":[
+        {
+            "weekday": "Mandag",
+            "weatherIcon": "sun",
+            "temperature": "30"
+        },
+        {
+            "weekday": "Tirsdag",
+            "weatherIcon": "rainy",
+            "temperature": "25"
+        },
+        {
+            "weekday": "Onsdag",
+            "weatherIcon": "sun_rain",
+            "temperature": "21"
+        },
+        {
+            "weekday": "Torsdag",
+            "weatherIcon": "cloud",
+            "temperature": "23"
+        },
+        {
+            "weekday": "Fredag",
+            "weatherIcon": "sun",
+            "temperature": "25"
+        },
+        {
+            "weekday": "Lørdag",
+            "weatherIcon": "rainy",
+            "temperature": "12"
+        },
+        {
+            "weekday": "Søndag",
+            "weatherIcon": "rainy",
+            "temperature": "10"
+        }
+    ]
+
+}
