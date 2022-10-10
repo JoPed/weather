@@ -9,7 +9,8 @@ const UseFetch = (url)=>{
         fetch(url, {
             headers: {
                 'Content-Type': "application/json",
-                'Accept': "application/json"
+                'Accept': "application/json",
+                'Content-Type': "text/plain"
             }
         })
         .then(res => res.json())
